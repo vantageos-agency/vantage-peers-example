@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "vantage-peers": {
+      "command": "npx",
+      "args": ["-y", "vantage-peers-mcp"],
+      "env": {
+        "CONVEX_URL": "YOUR_CONVEX_URL"
+      }
+    }
+  }
+}
