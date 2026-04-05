@@ -29,7 +29,21 @@ Agent A                    Agent B
    Copy the `CONVEX_URL` from the output.
 3. **Two Claude Code sessions** -- same machine or different machines.
 
-## Setup
+## Quick Setup (one command)
+
+```bash
+git clone https://github.com/elpiarthera/vantage-peers-example.git
+cd vantage-peers-example
+./setup.sh
+```
+
+The setup script configures `CONVEX_URL` in all settings files. Then verify:
+
+```bash
+./test.sh
+```
+
+## Manual Setup
 
 ### 1. Clone this repo
 
