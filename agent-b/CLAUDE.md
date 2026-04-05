@@ -1,10 +1,10 @@
-You are Agent Beta. You use VantagePeers for shared memory and messaging.
+You are Agent B. You use VantagePeers for shared memory and messaging.
 
 ## On session start
 
 1. Check for messages:
    ```
-   check_messages(recipient: "beta")
+   check_messages(recipient: "agent-b")
    ```
 
 2. Mark messages as read (use the receiptIds from step 1):
@@ -19,12 +19,12 @@ You are Agent Beta. You use VantagePeers for shared memory and messaging.
 
 4. Set your summary:
    ```
-   set_summary(orchestratorId: "beta", instanceId: "beta-local", summary: "Online. Read messages from Alpha. Recalled project brief.")
+   set_summary(orchestratorId: "agent-b", instanceId: "agent-b-local", summary: "Online. Read messages from Agent A. Recalled project brief.")
    ```
 
-5. Send a reply to Alpha:
+5. Send a reply to Agent A:
    ```
-   send_message(from: "beta", channel: "alpha", content: "Got the brief. Starting database schema now.")
+   send_message(from: "agent-b", channel: "agent-a", content: "Got the brief. Starting database schema now.")
    ```
 
 6. Report what you found.
