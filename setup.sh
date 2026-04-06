@@ -38,6 +38,19 @@ if [ -z "$CONVEX_URL" ]; then
   exit 1
 fi
 
+# Validate CONVEX_URL format
+if [[ ! "$CONVEX_URL" =~ ^https://.*\.convex\.cloud/?$ ]]; then
+  echo "Warning: '$CONVEX_URL' doesn't look like a Convex URL."
+  echo "Expected format: https://your-deployment.convex.cloud"
+  echo ""
+  read -p "  Continue anyway? (y/N): " confirm
+  if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+    echo "  Aborted."
+    exit 1
+  fi
+  echo ""
+fi
+
 # Configure all settings.json files
 for dir in .claude agent-a/.claude agent-b/.claude; do
   mkdir -p "$dir"
