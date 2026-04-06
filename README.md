@@ -36,13 +36,13 @@ Agent A                    Agent B
 ```bash
 git clone https://github.com/vantageos-agency/vantage-peers-example.git
 cd vantage-peers-example
-./setup.sh
+bash setup.sh
 ```
 
 The setup script configures `CONVEX_URL` in all settings files. Then verify:
 
 ```bash
-./test.sh
+bash test.sh
 ```
 
 ## Manual Setup
