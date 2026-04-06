@@ -25,7 +25,7 @@ Agent A                    Agent B
 1. **A Convex account** -- free tier at [convex.dev](https://dashboard.convex.dev). No credit card required.
 2. **VantagePeers deployed** -- follow the [Getting Started guide](https://vantagepeers.com/docs/getting-started) or run:
    ```bash
-   git clone https://github.com/elpiarthera/vantage-peers.git
+   git clone https://github.com/vantageos-agency/vantage-peers.git
    cd vantage-peers && npm install && npx convex deploy
    ```
    Copy the `CONVEX_URL` from the output.
@@ -34,7 +34,7 @@ Agent A                    Agent B
 ## Quick Setup (one command)
 
 ```bash
-git clone https://github.com/elpiarthera/vantage-peers-example.git
+git clone https://github.com/vantageos-agency/vantage-peers-example.git
 cd vantage-peers-example
 ./setup.sh
 ```
@@ -50,7 +50,7 @@ The setup script configures `CONVEX_URL` in all settings files. Then verify:
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/elpiarthera/vantage-peers-example.git
+git clone https://github.com/vantageos-agency/vantage-peers-example.git
 cd vantage-peers-example
 ```
 
@@ -130,4 +130,4 @@ Both agents should report successful memory storage, messaging, and recall. You 
 
 ---
 
-Built with [VantagePeers](https://github.com/elpiarthera/vantage-peers) -- the open-source coordination backend for AI agent teams.
+Built with [VantagePeers](https://github.com/vantageos-agency/vantage-peers) -- the open-source coordination backend for AI agent teams.
